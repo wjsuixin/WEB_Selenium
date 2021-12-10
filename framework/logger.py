@@ -16,9 +16,9 @@ class Logger(object):
         rq = time.strftime('%Y%m%d%H%M', time.localtime(time.time()))
         log_path = os.path.dirname(os.path.dirname(__file__)) + '/logs/'
         #print(log_path)
-        log_name = log_path + rq + '.log'
+        log_name = log_path + rq + '.txt'
         #print(log_name)
-        fh = logging.FileHandler(log_name)
+        fh = logging.FileHandler(log_name,encoding="utf-8")
         fh.setLevel(logging.INFO)
  
         # 再创建一个handler，用于输出到控制台
@@ -26,7 +26,7 @@ class Logger(object):
         ch.setLevel(logging.INFO)
  
         # 定义handler的输出格式
-        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(lineno)d -  %(levelname)s - %(message)s')
         fh.setFormatter(formatter)
         ch.setFormatter(formatter)
  

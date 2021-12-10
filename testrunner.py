@@ -34,7 +34,7 @@ with open(DIR+'/test_report/'+filename,'wb') as f:
 current_time=time.strftime("%Y%m%d%H%M%S")
 report_path=os.path.join(os.path.dirname(__file__),"report")
 file_name="研学ERP_UI自动化测试_"+str(current_time)
-discover=unittest.defaultTestLoader.discover(start_dir=r"C:\Users\Hiseas\Desktop\Selenium\testsuites",pattern="*case.py")
+discover=unittest.defaultTestLoader.discover(start_dir=os.path.dirname(__file__)+r"\testsuites",pattern="test_*.py")
 
 BeautifulReport(discover).report(description="研学ERP系统自动化测试",filename=file_name,report_dir=report_path)
 

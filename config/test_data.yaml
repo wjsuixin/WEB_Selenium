@@ -1,0 +1,14 @@
+user:
+  valid:
+    user: wj@qq.com
+    password: yx1234
+  invalid:
+    user: wj
+    password: yx1234
+  forbidden:
+    user: 12122334455@QQ.COM
+    password: yx1234
+  error_password:
+    user: wj@qq.com
+    password: yx12345
+

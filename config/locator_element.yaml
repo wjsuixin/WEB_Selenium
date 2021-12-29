@@ -1,0 +1,225 @@
+#登录元素
+username: id>username
+password: id>password
+login_btn: xpath>//*[@id="root"]/div/div/form/div[4]/div/div/div/button
+verificationCode_error_login_btn: xpath>//*[@id="root"]/div/div/form/div[6]/div/div/div/button
+index_title: xpath>//*[@id="root"]/section/section/aside/div/ul/li[1]/span/a/span
+login_error_text: xpath>/html/body/div[2]/div/div/div/div/div
+verificationCode_error_text: xpath>/html/body/div[3]/div/div/div/div/div/span[2]
+verificationCode: id>verificationCode
+
+#注销登录
+user: xpath>//*[@id="root"]/section/header/div/div[3]/div/div[3]/span/a/span[2]
+login_out: xpath>/html/body/div[2]/div/div/ul/li[3]/span/span
+text: xpath>//*[@id="root"]/div/div/form/div[1]
+
+#菜单栏内容
+basic: class>ant-menu-title-content
+basic_list: class>ant-menu-title-content
+
+#岗位管理
+job_add: xpath>//span[text()="新增岗位"]
+job_name: id>name
+job_desc: id>description
+job_check: class>ant-btn
+last_page: class>ant-pagination-item[5]
+name_list: xpath>//input[@placeholder="搜索名称"]
+job_query: xpath>//span[text()="查 询"]
+edit_btn: xpath>//span[text()="编辑"]
+
+#基础档案-启用/停用公共元素
+all_status: xpath>//span[@title()="全部"]
+enable_status: xpath>//span[@title()="启用"]
+disable_status: xpath>//span[@title()="停用"]
+selct_data: class>ant-checkbox-input
+dis_enable_btn: xpath>//span[text()="停用/启用"]
+disable_btn: class>ant-btn
+enable_btn: class>ant-btn
+
+#角色管理
+role_new: xpath>//span[text()="新增角色"]
+role_name: class>ant-input[1]
+role_other_name: class>ant-input[2]
+select_system: xpath>//span[text()="请选择授权系统"]
+system_list: xpath>//div[@title="研学ERP "]
+select: class>ant-tree-checkbox-inner[0-13]
+role_ok: xpath>//span[text()="确 定"]
+role_query: xpath>//span[text()="查 询"]
+
+#供应商管理
+su_new_btn: xpath>//span[text()="新增"]
+supplier_name: id>name
+supplier_country: id>countryId
+supplier_country_list: xpath>//div[@title="中国"]
+supplier_province: id>provinceCityId
+supplier_province_list: class>ant-cascader-menu-item
+supplier_address: id>address
+supplier_phoneNo: id>phoneNo
+supplier_email: id>email
+supplier_comm: xpath>//span[text()='添 加']
+supplier_add_btn: class>ant-select-selection-search-input
+supplier_clear: class>ant-select-selection-item
+supplier_list: xpath>//div[@title="#su_name#"]
+supplier_submit: class>ant-btn
+supplier_checkbox: class>ant-checkbox-input
+supplier_type: class>ant-radio-button
+su_resouce_name: class>ant-select-selection-search-input
+su_resouce_baoxian: xpath>/html/body/div[9]/div/div/div/div[2]/div[1]/div/div/div[1]/div
+category: id>category
+out_category: xpath>//div[@title="外部"]
+inner_category: xpath>//div[@title="内部"]
+supplier_remark: id>remark
+#供应商-付款信息
+supplier_pay: class>ant-radio-input
+prepayPercent_lable: xpath>//lable[@title="预付比例"]
+prepayPercent: id>prepayPercent
+Percent_50: xpath>//div[@title="50"]
+supplier_payType: id>payType
+supplier_payType_list: class>ant-select-item-option-content
+supplier_currencyId: id>currencyId
+supplier_currencyId_list: class>ant-select-item-option-content
+CNY: xpath>//div[@title="人民币"]
+supplier_payPeriod: id>payPeriod
+#付款方式
+BANK_TRANSFER: xpath>//div[@title="银行转账"]
+CREDIT_CARD: xpath>//div[@title="信用卡"]
+CASH: xpath>//div[@title="现金"]
+CHEQUE: xpath>//div[@title="支票"]
+ALIPAY: xpath>//div[@title="支付宝"]
+WECHAT_PAY: xpath>//div[@title="微信"]
+#供应商-联系人信息
+supplierContactsAdd: xpath>//span[text()="更多联系人信息"]
+supplierContacts_name: id>supplierContacts_0_name
+supplierContacts_phoneNo: id>supplierContacts_0_phoneNo
+supplierContacts_wechatNo: id>supplierContacts_0_wechatNo
+supplierContacts_position: id>supplierContacts_0_position
+delete_contact: class>anticon-delete
+#供应商-银行账户信息
+add_bank: xpath>//span[text()="添加银行账户"]
+account_CREDIT: xpath>//div[@title="信用卡"]
+account_ALIPAY: xpath>//div[@title="支付宝"]
+account_CASH: xpath>//div[@title="储蓄卡"]
+su_country: xpath>//div[@title="中国"]
+su_sheng: xpath>//li[@title="河北省"]
+su_city: xpath>//li[@title="秦皇岛市"]
+delete_bankinfo: xpath>//span[text='移除']
+#供应商-附件上传
+supplier_updload: class>ant-upload
+#供应商-提交/取消
+su_submit: xpath>//*[@id="root"]/section/section/main/div/div/div[3]/div/div[2]/div/div/div[3]/div/button[2]/span
+su_cancel: xpath>//span[text()="取 消"]
+
+#订单管理
+new_order: xpath>//span[text()="+ 新增"]
+code: id>code
+order_title: xpath>//*[@id='root']/section/section/aside/div/ul/li[2]/div/span[1]/span/span
+order_buton: xpath>//*[@id="rc-menu-uuid-10217-1-3-popup"]/li[1]/span
+order_add: xpath>//*[@id="root"]/section/section/main/div/div/div[1]/div[2]/button[2]/span
+sale: id>sale_Id
+sale_name: xpath>/html/body/div[2]/div/div/div/div[2]/div[1]/div/div/div[4]
+Organization: id>userOrganization_Id
+Organization_name: xpath>/html/body/div[3]/div/div/div/div[2]/div[1]/div/div/div
+customer: id>customer_Id
+customer_name: xpath>/html/body/div[4]/div/div/div/div[2]/div[1]/div/div/div[2]
+start_date: id>date
+start_time: xpath>/html/body/div[5]/div/div/div/div[2]/div/div[2]/div/div[2]/table/tbody/tr[3]/td[4]
+contract: id>contract
+contract_Y: xpath>/html/body/div[6]/div/div/div/div[2]/div[1]/div/div/div[1]
+destination: id>destinationCustom_Id
+destination_name: xpath>/html/body/div[7]/div/div/div/div[2]/div[1]/div/div/div[4]
+groupType: id>groupDoType
+groupType_name: xpath>/html/body/div[8]/div/div/div/div[2]/div[1]/div/div/div[2]/div
+groupTypeCustom: id>groupTypeCustom_Ids
+groupTypeCustom_name: xpath>/html/body/div[4]/div/div/div/div[2]/div[1]/div/div/div[2]/div
+unitPrice: id>unitPrice
+gpr: id>gpr
+goSchool: id>goSchool_Id
+shool_name: xpath>/html/body/div[10]/div/div/div/div[2]/div[1]/div/div/div[3]/div
+studentNum: id>studentNum
+orderChannelType: id>orderChannelType
+orderChannelType_name: xpath>//div[@title="公司渠道"]
+monthBillPeriod: id>monthBillPeriod
+order_text: id>memo
+next: xpath>//span[text()="下一步"]
+
+resurce_check: class>ant-checkbox-input
+resourceTypes: id>resourceTypes
+base_camp: xpath>//span[text()='基地/营地/票']
+Traffic: xpath>//span[text()='交通']
+Meal: xpath>//span[text()='餐']
+Worker: xpath>//span[text()='工作人员']
+Material: xpath>//span[text()='物料']
+Insurance: xpath>//span[text()='保险']
+Hotel: xpath>//span[text()='酒店']
+Design: xpath>//span[text()='美化']
+
+start_city: id>resource_list_0_departureLocations
+city_name: xpath>//div[text()='重庆市']
+arrive_city: id>resource_list_0_arrivalLocations
+a_city_name: xpath>/html/body/div[13]/div/div/div/div[2]/div[1]/div/div/div[4]/div
+add_resource: class>ant-dropdown-trigger
+resource_name: class>ant-dropdown-menu-title-content
+
+#餐要求
+time: id>time
+meal_H: xpath>//div[text()="05"]
+meal_M: xpath>//*[@id="rc-tabs-1-panel-1"]/div/div[2]/div[1]/div[2]/form/div[2]/div[2]/div/div/div[2]/div/div/div/div/div[1]/div[2]/div[2]/ul[2]/li[7]/div
+quedin: xpath>//span[text()='确 定']
+yoncanrenyuan: id>journeyResourceMealItems_0_diner_
+yoncanrenyuan_name: xpath>//div[text()='工作人员']
+mealType: id>journeyResourceMealItems_0_mealTypeCustom_Id
+mealType_name: xpath>//div[text()='中式晚餐']
+more: xpath>//span[text()='添加更多']
+
+#备注+保存为公用元素
+save_resource: class>ant-btn-sm
+
+#酒店要求
+add_hotel: xpath>//span[text()="酒店"]
+student_zili: xpath>//span[text()='学生自理']
+hotel_H: xpath>//*[@id="rc-tabs-1-panel-1"]/div/div[2]/div[1]/div[2]/form/div[3]/div[2]/div/div/div[2]/div/div/div/div/div[1]/div[2]/div[2]/ul[1]/li[7]/div
+star: xpath>//*[@id="starCustomId"]
+start_name: xpath>//div[text()='三星级']
+breakfast: xpath>//*[@id="breakfastCustomId"]
+breakfast_name: xpath>//div[text()='稀饭']
+room: xpath>//*[@id="roomAmountPairs_0_roomCustomId"]
+room_name: xpath>//div[text()='总统房']
+roomAmount: id>roomAmountPairs_0_amount
+add_room: xpath>//span[text()='添加房间']
+save_hotel: xpath>//*[@id="rc-tabs-1-panel-1"]/div/div[2]/div[1]/div[2]/form/div[1]/div/div/div/div/div[2]/button[2]
+next_2: class>ant-btn-primary
+snns: xpath>//a[@title='selenium滑动页面的滚动条
+#操作按钮
+next_page: xpath>//*[@id="rc-tabs-1-panel-1"]/div/div[2]/div[2]/div[4]/div/div/div/div/button/span
+#工作人员要求
+worker_type: id>jobNatures
+work: xpath>//div[text()='领队']
+
+#保险要求
+insur: xpath>//span[text()='学生']
+
+#交通要求
+trafficModes: id>trafficModes
+trafficMode: xpath>//div[text()='车']
+departureTime: id>journeyResourceVehicleList_0_departureTime
+next_Mouth: xpath>/html/body/div[17]/div/div/div/div/div[1]/div[1]/div[1]/button[3]/span
+choice_day: xpath>/html/body/div[17]/div/div/div/div/div[1]/div[1]/div[2]/table/tbody/tr[3]/td[5]/div
+time_save: xpath>//span[text()='确 定']
+Vehicle_start: id>journeyResourceVehicleList_0_departureLocation_Id
+Vehicle_start_city: xpath>/html/body/div[18]/div/div/div/div[2]/div[1]/div/div/div[4]
+returnTime: id>journeyResourceVehicleList_0_returnTime
+returnTime_nextM: xpath>/html/body/div[19]/div/div/div/div/div[1]/div[1]/div[1]/button[3]/span
+returnday: xpath>/html/body/div[19]/div/div/div/div/div[1]/div[1]/div[2]/table/tbody/tr[3]/td[5]/div
+return_time_save: xpath>/html/body/div[19]/div/div/div/div/div[2]/ul/li[2]/button
+return_city: id>journeyResourceVehicleList_0_returnLocation_Id
+return_city_name: xpath>/html/body/div[20]/div/div/div/div[2]/div[1]/div/div/div[5]
+vehicleAmount: id>journeyResourceVehicleCls_0_vehicleAmount
+VehicleCls: id>journeyResourceVehicleCls_0_vehicleModel
+VehicleCls_num: xpath>/html/body/div[21]/div/div/div/div[2]/div[1]/div/div/div[5]/div
+
+#美化要求
+designRequire: id>designRequire
+Require: xpath>//div[text()='完备的、完美的']
+
+#提交
+order_submit: xpath>//span[text()='提 交']

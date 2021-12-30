@@ -7,7 +7,9 @@ from pageobjects.login import LoginPage
 from base.logger import Logger
 # 创建一个日志实例
 logger = Logger(logger="JobMange").getlog()
-
+import os,sys
+base_path=os.path.dirname(os.path.dirname(__file__))
+sys.path.append(base_path)
 class RoleMange(LoginPage):
     """
     角色管理页面类

@@ -2,6 +2,9 @@
 # author： wujiang
 # datetime： 2021/12/21 17:34
 from base.base_page import BasePage
+import os,sys
+base_path=os.path.dirname(os.path.dirname(__file__))
+sys.path.append(base_path)
 '''
 driver.get("http://www.baidu.com")
 driver.execute_script('document.getElementById("kw").value="selenium"')
@@ -28,6 +31,3 @@ class JsTest(BasePage):
         self.sleep(2)
         now_time=self.js_excute("return document.getElementById('train_date').value")
         assert now_time[0]=="2020-10-01"
-if __name__ == '__main__':
-    jst=JsTest()
-    jst.js_test1()

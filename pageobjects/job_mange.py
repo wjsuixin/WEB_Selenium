@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 # author： wujiang
 # datetime： 2021/12/8 17:29
+import os,sys
 from faker import Faker
 from pageobjects.login import LoginPage
 from base.logger import Logger
+base_path=os.path.dirname(os.path.dirname(__file__))
+sys.path.append(base_path)
 # 创建一个日志实例
 logger = Logger(logger="JobMange").getlog()
 

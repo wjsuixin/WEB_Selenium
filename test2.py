@@ -7,6 +7,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from time import sleep
 from base.base_page import BasePage
+import os,sys
+base_path=os.path.dirname(os.path.dirname(__file__))
+sys.path.append(base_path)
 """
 driver = webdriver.Chrome()
 driver.get("https://www.baidu.com")

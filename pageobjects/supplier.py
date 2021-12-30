@@ -7,6 +7,9 @@ from base.logger import Logger
 # 创建一个日志实例
 logger = Logger(logger="JobMange").getlog()
 faker=Faker()
+import os,sys
+base_path=os.path.dirname(os.path.dirname(__file__))
+sys.path.append(base_path)
 class Supplier(LoginPage):
     """
     供应商管理页面类

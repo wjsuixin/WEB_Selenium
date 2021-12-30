@@ -1,19 +1,15 @@
 from selenium import webdriver
 from base.logger import Logger
 from until.read_ini import ReadIni
-import unittest
+import unittest,os,sys
+base_path=os.path.dirname(os.path.dirname(__file__))
+sys.path.append(base_path)
 logger = Logger(logger="TestBase").getlog()
 
-class TestBase(unittest.TestCase,ReadIni):
+class TestBase(unittest.TestCase):
     def setUp(self):
         logger.info("开始执行测试。")
-        browser_type=self.get_ini_data("browser_type","browser")
-        if browser_type.upper()=="CHROME":
-            self.driver=webdriver.Chrome()
-        elif browser_type.upper()=="FIREFOX":
-            self.driver = webdriver.Firefox()
-        else:
-            logger.error("没有该浏览器类型配置，请检查！")
+        self.driver=webdriver.Chrome()
         self.driver.implicitly_wait(10)  #设置隐式等待
         self.driver.maximize_window()    #最大化浏览器
 

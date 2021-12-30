@@ -10,9 +10,11 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from pykeyboard import PyKeyboard
-import os
+import os,sys
 from base.logger import Logger
 from until.my_yaml import read_yaml
+base_path=os.path.dirname(os.path.dirname(__file__))
+sys.path.append(base_path)
 
 # 创建一个日志实例
 logger = Logger(logger="BasePage").getlog()
@@ -21,9 +23,9 @@ class BasePage(object):
     """
     定义一个页面基类，让所有页面都继承这个类，封装一些常用的页面操作方法
     """
-    def __init__(self):
-        self.driver =webdriver.Chrome()
-        #self.driver=driver
+    def __init__(self,driver):
+        #self.driver =webdriver.Chrome()
+        self.driver=driver
         self.driver.maximize_window()
 
     def open_url(self,url):

@@ -2,12 +2,12 @@
 # author： wujiang
 # datetime： 2021/12/6 16:47
 import yaml
-import os
 from base.logger import Logger
-
+import os,sys
+base_path=os.path.dirname(os.path.dirname(__file__))
+sys.path.append(base_path)
 # 创建一个日志实例
 logger = Logger(logger="read_yaml").getlog()
-base_path=os.path.dirname(os.path.dirname(__file__))
 
 class ReadYmal:
     """
@@ -66,7 +66,7 @@ read_yaml=ReadYmal()
 if __name__ == '__main__':
     ry=ReadYmal()
     file="/config/test_data.yaml"
-    data=ry.load_yaml(file)
-    print(data.get("user")['valid'])
+    print(ry.load_yaml(file))
+    print(ry.get_data("user",file)["valid"]["user"])
 
 

@@ -4,9 +4,11 @@
 from until.read_ini import ReadIni
 from dbutils.pooled_db import PooledDB
 import pymysql
-import os
 import configparser
 from base.logger import Logger
+import os,sys
+base_path=os.path.dirname(os.path.dirname(__file__))
+sys.path.append(base_path)
 # 创建一个日志实例
 logger = Logger(logger="MySQLConnection").getlog()
 read_ini=ReadIni()

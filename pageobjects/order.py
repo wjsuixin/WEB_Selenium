@@ -8,6 +8,9 @@ from selenium.webdriver.common.action_chains import ActionChains
 # 创建一个日志实例
 logger = Logger(logger="Order").getlog()
 faker=Faker()
+import os,sys
+base_path=os.path.dirname(os.path.dirname(__file__))
+sys.path.append(base_path)
 class Order(LoginPage):
     """
     订单管理页面类

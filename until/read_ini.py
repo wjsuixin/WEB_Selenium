@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 # author： wujiang
 # datetime： 2021/12/6 10:23
-import configparser
-from base.logger import Logger
 import os,sys
 base_path=os.path.dirname(os.path.dirname(__file__))
 sys.path.append(base_path)
+import configparser
+from base.logger import Logger
+
 # 创建一个日志实例
 logger = Logger(logger="until").getlog()
 class ReadIni:

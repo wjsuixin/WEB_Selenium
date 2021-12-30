@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 # author： wujiang
 # datetime： 2021/12/21 14:10
+import os,sys
+base_path=os.path.dirname(os.path.dirname(__file__))
+sys.path.append(base_path)
 from faker import Faker
 from pageobjects.login import LoginPage
 from base.logger import Logger
@@ -8,9 +11,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 # 创建一个日志实例
 logger = Logger(logger="Order").getlog()
 faker=Faker()
-import os,sys
-base_path=os.path.dirname(os.path.dirname(__file__))
-sys.path.append(base_path)
+
 class Order(LoginPage):
     """
     订单管理页面类

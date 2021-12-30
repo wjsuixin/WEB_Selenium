@@ -18,6 +18,8 @@ mail.sendmail("763462254@qq.com", ["jiang.wu@weihongtech.cn"], message.as_string
 """
 
 import os,sys
+base_path=os.path.dirname(os.path.dirname(__file__))
+sys.path.append(base_path)
 import unittest
 import smtplib
 from HTMLTestRunner import HTMLTestRunner
@@ -25,8 +27,6 @@ from email.mime.text import MIMEText
 from email.header import Header
 from datetime import datetime
 import time
-base_path=os.path.dirname(os.path.dirname(__file__))
-sys.path.append(base_path)
 
 class SendEmail:
     #自动发送邮件

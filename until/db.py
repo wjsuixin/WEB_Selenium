@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 # author： wujiang
 # datetime： 2021/12/23 13:59
+import os,sys
+base_path=os.path.dirname(os.path.dirname(__file__))
+sys.path.append(base_path)
 from until.read_ini import ReadIni
 from dbutils.pooled_db import PooledDB
 import pymysql
 import configparser
 from base.logger import Logger
-import os,sys
-base_path=os.path.dirname(os.path.dirname(__file__))
-sys.path.append(base_path)
 # 创建一个日志实例
 logger = Logger(logger="MySQLConnection").getlog()
 read_ini=ReadIni()

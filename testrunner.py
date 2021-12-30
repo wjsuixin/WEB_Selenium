@@ -1,12 +1,13 @@
 #encoding='utf-8'
+import os,sys
+base_path=os.path.dirname(os.path.dirname(__file__))
+sys.path.append(base_path)
 import unittest
 #from HTMLTestRunner import HTMLTestRunner
 from BeautifulReport import  BeautifulReport
 from base.email_psot import SendEmail
 import time
-import os,sys
-base_path=os.path.dirname(os.path.dirname(__file__))
-sys.path.append(base_path)
+
 """
 # 定义输出的文件位置和名字
 DIR = os.path.dirname(os.path.abspath(__file__))

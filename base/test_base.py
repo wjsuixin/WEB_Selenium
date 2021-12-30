@@ -1,9 +1,10 @@
+import os,sys
+base_path=os.path.dirname(os.path.dirname(__file__))
+sys.path.append(base_path)
 from selenium import webdriver
 from base.logger import Logger
 from until.read_ini import ReadIni
-import unittest,os,sys
-base_path=os.path.dirname(os.path.dirname(__file__))
-sys.path.append(base_path)
+import unittest
 logger = Logger(logger="TestBase").getlog()
 
 class TestBase(unittest.TestCase):

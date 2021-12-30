@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 # author： wujiang
 # datetime： 2021/12/6 16:47
+import os,sys
+base_path=os.path.dirname(os.path.dirname(__file__))
+sys.path.append(base_path)
 import time
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.wait import WebDriverWait
@@ -10,11 +13,9 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from pykeyboard import PyKeyboard
-import os,sys
 from base.logger import Logger
 from until.my_yaml import read_yaml
-base_path=os.path.dirname(os.path.dirname(__file__))
-sys.path.append(base_path)
+
 
 # 创建一个日志实例
 logger = Logger(logger="BasePage").getlog()

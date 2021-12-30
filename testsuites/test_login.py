@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 # author： wujiang
 # datetime： 2021/12/9 16:17
-from base.test_base import TestBase
-from pageobjects.login import LoginPage
 import os,sys
 base_path=os.path.dirname(os.path.dirname(__file__))
 sys.path.append(base_path)
+from base.test_base import TestBase
+from pageobjects.login import LoginPage
 
 class TestLogin(TestBase,LoginPage):
     """

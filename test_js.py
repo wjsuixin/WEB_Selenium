@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 # author： wujiang
 # datetime： 2021/12/21 17:34
-from base.base_page import BasePage
 import os,sys
 base_path=os.path.dirname(os.path.dirname(__file__))
 sys.path.append(base_path)
+from base.base_page import BasePage
+
 '''
 driver.get("http://www.baidu.com")
 driver.execute_script('document.getElementById("kw").value="selenium"')

@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
 # author： wujiang
 # datetime： 2021/12/13 16:54
+import os,sys
+base_path=os.path.dirname(os.path.dirname(__file__))
+sys.path.append(base_path)
 from faker import Faker
 from base.url_save import *
 from pageobjects.login import LoginPage
 from base.logger import Logger
 # 创建一个日志实例
 logger = Logger(logger="JobMange").getlog()
-import os,sys
-base_path=os.path.dirname(os.path.dirname(__file__))
-sys.path.append(base_path)
+
 class RoleMange(LoginPage):
     """
     角色管理页面类
